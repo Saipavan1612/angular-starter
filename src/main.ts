@@ -13,7 +13,7 @@ import 'zone.js';
   `,
 })
 export class App {
-  name = 'Angular';
+  name = 'Angular Test';
 }
 
 bootstrapApplication(App);
