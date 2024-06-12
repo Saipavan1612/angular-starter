@@ -20,7 +20,7 @@ export class UserComponent {
   // avatar = input.required<string>();
   // name = input.required<string>();
 
-  //THIS IS USING Signals
+  // THIS IS USING Signals
   // selectedUser = DUMMY_USERS[randomIndex];
   // selectedUser = signal(DUMMY_USERS[randomIndex]);
 
