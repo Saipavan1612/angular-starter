@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import 'zone.js';
-import { App } from './app/app.component';
+import { AppComponent } from './app/app.component';
+bootstrapApplication(AppComponent);
 
-bootstrapApplication(App);
+// import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+// import { AppModule } from './app/app.module';
+
+// platformBrowserDynamic().bootstrapModule(AppModule);

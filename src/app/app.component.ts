@@ -12,7 +12,7 @@ import { NgFor, NgIf } from "@angular/common";
     styleUrl: './app.component.css',
     imports: [HeaderComponent, UserComponent, TasksComponent, NgFor, NgIf]
 })
-export class App {
+export class AppComponent {
     users = DUMMY_USERS;
     selectedUserId = 'u1';
 
