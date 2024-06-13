@@ -1,21 +1,10 @@
 import { Component, EventEmitter, Input, Output, computed, input, output, signal } from '@angular/core';
 import { DUMMY_USERS } from '../dummy-users';
+import { User } from './user.model';
 
 // const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 
-//Using Type keyword
-// type User = {
-//   id: string,
-//   name: string,
-//   avatar: string
-// }
 
-//Using Interface
-interface User {
-  id: string,
-  name: string,
-  avatar: string
-}
 
 @Component({
   selector: 'app-user',
@@ -31,6 +20,7 @@ export class UserComponent {
   // @Input({ required: true }) name!: string;
 
   @Input({ required: true }) user!: User;
+  @Input({ required: true }) selected!: boolean;
 
   @Output() select = new EventEmitter<string>();
 
